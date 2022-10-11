@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNotests",
+    "test:staged": "jest --passWithNotests"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,8 @@
     "lint-staged": "^13.0.3",
     "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
