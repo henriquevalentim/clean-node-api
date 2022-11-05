@@ -1,4 +1,8 @@
-import { Controller, HttpRequest } from 'src/presentation/protocols'
+import {
+  Controller,
+  HttpRequest,
+  HttpResponse
+} from 'src/presentation/protocols'
 
 export class LogControllerDecorator implements Controller {
   private readonly controller: Controller
@@ -7,7 +11,7 @@ export class LogControllerDecorator implements Controller {
     this.controller = controller
   }
 
-  async handle(httpRequest: HttpRequest): Promise<any> {
+  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     const httpResponse = await this.controller.handle(httpRequest)
     return httpResponse
   }
