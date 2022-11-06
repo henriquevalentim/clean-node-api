@@ -1,7 +1,7 @@
 {
   "name": "clean-node-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "NojeJs Rest API using TDD, clean architecture and typescript",
   "main": "index.js",
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
