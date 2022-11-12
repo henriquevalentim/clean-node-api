@@ -8,7 +8,8 @@ import {
 import {
   badRequest,
   serverError,
-  unauthorized
+  unauthorized,
+  ok
 } from '../../helpers/http-helper'
 import { InvalidParamError, MissingParamError } from '../../errors'
 export class LoginController implements Controller {
@@ -40,7 +41,7 @@ export class LoginController implements Controller {
         return unauthorized()
       }
 
-      return badRequest(new MissingParamError('password'))
+      return ok({ accessToken })
     } catch (error: any) {
       return serverError(error)
     }
