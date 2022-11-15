@@ -1,12 +1,6 @@
 import { EmailValidatorAdapter } from './email-validator-adapter'
 import validator from 'validator'
 
-// jest.mock('validator', () => ({
-//   isEmail(): boolean {
-//     return true
-//   }
-// }))
-
 const makeSut = (): EmailValidatorAdapter => {
   return new EmailValidatorAdapter()
 }
