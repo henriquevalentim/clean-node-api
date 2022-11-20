@@ -9,7 +9,6 @@
       "noPropertyAccessFromIndexSignature": true,
       "noImplicitReturns": true,
       "noFallthroughCasesInSwitch": true,
-      "sourceMap": true,
       "declaration": false,
       "downlevelIteration": true,
       "experimentalDecorators": true,
@@ -17,11 +16,13 @@
       "importHelpers": true,
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
-      "target": "es2020",
-      "module": "es2020",
+      "target": "es2019",
+      "module": "CommonJS",
       "lib": [
         "es2020",
         "dom"
       ]
     },
+    "include": ["src"],
+    "exclude": ["**/*.spec.ts", "**/*.test.ts"]
   }
