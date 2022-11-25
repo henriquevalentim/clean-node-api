@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/main/server.js",
     "build": "rimraf dist && tsc",
-    "dev": "sucrase-node src/main/server.ts",
+    "up": "npm run build && docker-compose up -d",
+    "down": "docker-compose down",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests",
     "test:unit": "npm test --watch -c jest-unit-config.js",
@@ -46,7 +47,7 @@
     "mongodb": "^4.11.0",
     "ts-node": "^10.9.1",
     "validator": "^13.7.0"
-  }, 
+  },
   "engines": {
     "node": "14.x"
   }
