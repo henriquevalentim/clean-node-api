@@ -5,6 +5,7 @@
       "outDir": "./dist",
       "forceConsistentCasingInFileNames": true,
       "strict": true,
+      "sourceMap": true,
       "noImplicitOverride": true,
       "noPropertyAccessFromIndexSignature": true,
       "noImplicitReturns": true,
