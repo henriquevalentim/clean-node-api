@@ -6,6 +6,7 @@
       "forceConsistentCasingInFileNames": true,
       "strict": true,
       "sourceMap": true,
+      "rootDir": "src",
       "noImplicitOverride": true,
       "noPropertyAccessFromIndexSignature": true,
       "noImplicitReturns": true,
@@ -22,7 +23,7 @@
       "lib": [
         "es2020",
         "dom"
-      ]
+      ],
     },
     "include": ["src"],
     "exclude": ["**/*.spec.ts", "**/*.test.ts"]
